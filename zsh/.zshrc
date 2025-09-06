@@ -1,18 +1,18 @@
 #!/bin/zsh
 
 # ==================== CONFIGURAÇÕES ZSH ====================
-export ZSH="$HOME/.config/dotfiles/oh-my-zsh"
+export ZSH="$HOME/.config/oh-my-zsh"
 ZSH_THEME="robbyrussell"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # ==================== CONFIGURAÇÕES BÁSICAS ====================
-export XDG_CONFIG_HOME="$HOME/.config/dotfiles"
-export DOTFILES_DIR="$HOME/.config/dotfiles/"
-export ZSH_CONFIG_DIR="$$HOME/.config/dotfiles/zsh"
+export XDG_CONFIG_HOME="$HOME/.config/"
+export DOTFILES_DIR="$HOME/.config/"
+export ZSH_CONFIG_DIR="$$HOME/.config/zsh"
 export EDITOR="nvim"
 export VISUAL="nvim"
-export HISTFILE="$HOME/.config/dotfiles/zsh/.zsh_history"
+export HISTFILE="$HOME/.config/zsh/.zsh_history"
 export HISTSIZE=10000
 export SAVEHIST=10000
 export EDITOR="nvim"
@@ -23,9 +23,8 @@ setopt share_history
 setopt hist_ignore_all_dups
 setopt hist_ignore_space
 
-
 # Carregar configurações modularizadas
-ZSH_CONFIG_DIR="$HOME/.config/dotfiles/zsh/config"  # Pega o diretório deste arquivo
+ZSH_CONFIG_DIR="$HOME/.config/zsh/config"  # Pega o diretório deste arquivo
 
 # Carregar todos os arquivos de configuração
 for config_file in $ZSH_CONFIG_DIR/*.zsh; do
@@ -41,10 +40,11 @@ fi
 
 # Arquivo de aliases
 if [ -f ~/.config/dotfiles/zsh/aliases.zsh ]; then
-  source ~/.config/dotfiles/zsh/aliases.zsh
+  source ~/.config/zsh/aliases.zsh
 fi
 
 eval "$(/opt/homebrew/bin/brew shellenv)" # Homebrew
 eval "$(mise activate zsh)" # Mise
+
 
 
