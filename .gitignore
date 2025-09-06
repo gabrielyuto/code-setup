@@ -1,0 +1,17 @@
+# Git ignore in folder: zsh
+zsh/.zcompdump
+zsh/.zcompdump-*
+zsh/.zsh_history
+zsh/zsh_history
+zsh/.zshrc.pre-oh-my-zsh
+zsh/.zshrc.pre-oh-my-zsh.*
+
+# Git ignore in folder: oh-my-zsh
+oh-my-zsh*
+
+# Others
+.DS_Store
+github-copilot/
+.idea/
+.vscode/
+colima/
