@@ -7,7 +7,7 @@ zsh/.zshrc.pre-oh-my-zsh
 zsh/.zshrc.pre-oh-my-zsh.*
 
 # Git ignore in folder: oh-my-zsh
-oh-my-zsh*
+oh-my-zsh
 
 # Others
 .DS_Store
